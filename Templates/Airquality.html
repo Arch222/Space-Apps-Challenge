@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Air-Quality</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    </head>
+    <body class = "body">
+        <p style = " text-align: left;font-size:15px; font-family: Arial, Helvetica, sans-serif;">Air Quality is a great indicator of the amount of pollution in an area. For our project, we used NASA data and a Google Earts Engine App creator to create a visual representation of how the amount of NO2 changed during the Covid-19 pandemic.</p>
+        <h4 id = "11">China Map: May 2019 vs Januarary 2020</h4>
+        <video width="720" height="480" controls>
+            <source src={{ url_for('static', filename="spaceapps_NO2.mp4") }} type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p style = " text-align: left;font-size:15px; font-family: Arial, Helvetica, sans-serif;"> The map shows the changes in the NO2 levels in China from May 2019 to Janurary 2020. It is quite clear that the shutdown forced by the COVID-19 Pandemic caused the urban centers of Beijing and Shanghai to generate significantly less NO2 levels. This shows the impact the COVID-19 shutdown had on urban centers in one of the world's most polluted countries.</p>
+        <h4 id = "11">New York:February 2019 vs March 2020</h4>
+        <video width="720" height="480" controls>
+            <source src={{ url_for('static', filename="spaceapps_NO2NY.mp4") }} type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p style = " text-align: left;font-size:15px; font-family: Arial, Helvetica, sans-serif;"> In New York, a similar effect can be seen. We decided to use NO2 in the first place as it is one of the major pollution metrics(having been listed as a criteria pollutant by the E.P.A) and is close to ground level, meaning it has a direct impact on humans and wildlife living in the area.</p>
+
+        <p style = " text-align: left;font-size:15px; font-family: Arial, Helvetica, sans-serif;">Based on our findings, it is apparent that the practices adapted during the Covid-19 Pandemic led to a less noxious and polluted environment, at least based on NO2 emissions and metrics. Our eventual goal is to design a system where a user can get data specific to his region and then be advised on how to improve his environment in terms of air quality As of right now, we would reccomend that the leaders of vastly populated industrial cities take measures such as encouraging car-pooling,public transportation, and green-energy to keep NO2 concentrations in check beyond this pandemic.</p>
+        <h4>More Data: In Maps!</h4>
+        <img src={{ url_for('static', filename="no2_NYC-1.png") }} alt="Map of cases" width ="720" height="480">
+        <img src={{ url_for('static', filename="no2_Wuhan-1.png") }} alt="Map of cases" width ="720" height="480">
+        <img src={{ url_for('static', filename="no2_Milan-1.png") }} alt="Map of cases" width ="720" height="480">
+        <img src={{ url_for('static', filename="CO_Milan-1.png") }} alt="Map of cases" width ="720" height="480">
+        <img src={{ url_for('static', filename="CO_NYC-1.png") }} alt="Map of cases" width ="720" height="480">
+        <img src={{ url_for('static', filename="CO_Wuhan-1.png") }} alt="Map of cases" width ="720" height="480">
+        
+
+
+
+
+         
+        
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Night-Time Lights</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    </head>
+    <body class = "body">
+        <p style = " text-align: left;font-size:15px; font-family: Arial, Helvetica, sans-serif;">Nigh-time lights are an perfect indicator of urban activity. Measured in nanoWatts/cm2/sr, it provides a valuable indicator of how the pandemic transformed public life and activity. It also serves as a reliable indicator of energy usage, which highlights how active industries and businesses are.</p>
+        <h4 id = "11">China Night-time Lights May 2019 vs Januarary 2020</h4>
+        <video width="720" height="480" controls>
+            <source src={{ url_for('static', filename="VIIRS Stray Light Corrected Nighttime.mp4") }} type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p style = " text-align: left;font-size:15px; font-family: Arial, Helvetica, sans-serif;">This map shows how night-time lights decreased in the epi-center of Wuhan,China. The lockdowns and restrictions in urban movement reduced night-time activity to only essential businesses, leading to the decrease oberserved in the chart. In Wuhan, a full lockdown was imposed to mitigate the spread of the virus. This lockdown not only prevented citizens in Wuhan from leaving their homes, but also prevented outside travel from other parts of China. This significantly reduced the night-time lights as observed.</p>
+        <h4 id = "11">NYC Night-time Lights </h4>
+        <video width="720" height="480" controls>
+            <source src={{ url_for('static', filename="viirs-stray-light-corrected-nighttime-v-2.mp4") }} type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p> What is interesting to note here is that there is virtually no change in the night-time lights between the desginated dates. What this communicates is NYC's(and techincally the US as whole) delayed response to the virus. By Janurary 2020, urban activity was progressing as before, leading to the large number of cases we see today.</p>
+        <a href = "{{ url_for('soc')}}">See for further context</a>
+        <h4 id = "11">Italy</h4>
+        <video width="720" height="480" controls>
+            <source src={{ url_for('static', filename="viirs-stray-light-corrected-nighttime-v-2 Italy.mp4") }} type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Italy's change in night-time lights, like the New Yorks, is not as truncated or obvious. This highlights Italy's delay in closing down and responding to the virus. Although COVID-19's epicenter was initally in Wuhan, an examniation of night-time lights shows that a delayed response to the virus is often consistient with little change in the number of night-time lights as compared between 2019 and early 2020. This data, along with the Covid-19 deaths and response times by country outlined in the socieconomic impacts, potentially corroborates the belief that countries who reacted later, as evidenced by the night-time lights, were harder hit. </p>
+        <a href = "https://eo_processing.users.earthengine.app/view/viirs-stray-light-corrected-nighttimev1">Try if you want further data</a>
+
+
+
+
+
+        
+
+
+         
+        
+    </body>
+</html>
